@@ -1,4 +1,15 @@
-{
+{   
+    "editor.cursorBlinking": "smooth",
+    "editor.lineNumbers": "on",
+    "editor.renderWhitespace": "none",
+    "editor.guides.indentation": true,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.renderLineHighlight": "none",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": false,
     "C_Cpp.errorSquiggles": "disabled",
     "terminal.integrated.defaultProfile.windows": "Command Prompt"
 }
