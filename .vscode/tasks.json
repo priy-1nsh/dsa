@@ -25,7 +25,7 @@
         {
             "label": "Compile",
             "type": "shell",
-            "command": "C:\\MinGW\\bin\\g++.exe",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
             "args": [
                 "${file}",
                 "-o",
