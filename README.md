@@ -1,1 +1,1 @@
-Data Structures and Algorithm - Striver and Lab Sheets
+Data Structures and Algorithms - Striver and Lab Sheets
