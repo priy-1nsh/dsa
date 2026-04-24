@@ -26,10 +26,10 @@ int main() {
         int h1 = key % M;
 
         // secondary hash function
-        int h2 = R - (key % R);
+        int h2 = R - (key % R)
 
-        // start from the index 0 and can maximum go till m-1
-        for (int i = 0; i < M; i++) {
+                 // start from the index 0 and can maximum go till m-1
+                 for (int i = 0; i < M; i++) {
             int probe = (h1 + (i * h2)) % M;  // ampersand makes it circular
             if (hashTable[probe] == -1) {
                 // insert
