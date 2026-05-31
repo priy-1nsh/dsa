@@ -1,2 +1,2 @@
 # dsa
-DSA Striver's A-Z sheet
+Nothing to say.
