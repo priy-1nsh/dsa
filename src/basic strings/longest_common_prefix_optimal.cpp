@@ -36,3 +36,5 @@ int main() {
 // on the string comparison cost, which is taken to be the size of the longest
 // string. Note : M is not necesssarily the longest string size in the strs
 // array but serves as a good upper bound on the string comparison.
+
+// https://docs.google.com/spreadsheets/d/1GqMvrQJUZHtqRpYYhD66CQo80EtnsRHvqYvGYbPSmOU/edit?usp=sharing
