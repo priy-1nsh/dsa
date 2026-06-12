@@ -10,10 +10,10 @@ vector<int> unionArray(vector<int>& arr1, vector<int>& arr2) {
     while (i < n1 && j < n2) {
         if (arr1[i] <= arr2[j]) {
             // this driver code is important and repeated :-
-            // if (unionArray.size() == 0 || unionArray.back() != arr1[i]) {
-            //     unionArray.push_back(arr1[i]);
-            // }
-            // i++;
+            if (unionArray.size() == 0 || unionArray.back() != arr1[i]) {
+                unionArray.push_back(arr1[i]);
+            }
+            i++;
             // uncomment it
         } else {
             // arr1[i] > arr2[j]
