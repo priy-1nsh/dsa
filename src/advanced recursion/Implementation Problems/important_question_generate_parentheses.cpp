@@ -1,8 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
    private:
     void generateParentheses(int currIndex, string& s, int closing, int opening,
                              vector<string>& ls, int n) {
         // base cases
+        if (closing > opening) return;
         if (opening > n)
             return;  // simply means, if more than half the places are filled
                      // with
