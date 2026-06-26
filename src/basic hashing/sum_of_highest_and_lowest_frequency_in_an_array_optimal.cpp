@@ -13,7 +13,7 @@ class Solution {
 
         // Now, hash[i] stores the frequnecy of the i th element
         for (int i = 0; i < maxi + 1; i++) {
-            if (hash[i] == 0) continue;
+            if (hash[i] == 0) continue;  // important
             if (hash[i] > maxFreq) maxFreq = hash[i];
             if (hash[i] < minFreq) minFreq = hash[i];
         }

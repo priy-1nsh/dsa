@@ -1,5 +1,3 @@
-package basic_hashing;
-
 class HighestOccurringElementInAnArrayBrute {
     /*
      * Function to get the highest
