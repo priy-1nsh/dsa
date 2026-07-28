@@ -13,7 +13,7 @@ class Solution {
             // only one non-zero number in the whole string
             // check if it's odd or not
             if ((str[i] - '0') % 2 == 1) {
-                return str.substr(N - 1);
+                return str.substr(N - 1);    
             } else
                 return "";
         }

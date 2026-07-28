@@ -1,22 +1,26 @@
 class Solution {
    public:
-    int f(int ind, int prev, vector<int>& nums, int n,
+    int f(int ind, int prev, int n, vector<int>& nums,
           vector<vector<int>>& dp) {
-        if (ind == n) return 0;
+        // base case
+        if (ind == n)
+            return 0;  // run out of all the elements in the subsequence
+
         if (dp[ind][prev + 1] != -1) return dp[ind][prev + 1];
 
-        int notTake = 0 + f(ind + 1, prev, nums, n);
-        int take = INT_MIN;
+        int len = 0 + f(ind + 1, prev, n, nums, dp);  // not take case
+
         if (prev == -1 || nums[ind] > nums[prev]) {
-            take = 1 + f(ind + 1, ind, nums, n);
+            // can take
+            len = max(len, 1 + f(ind + 1, ind, n, nums, dp));  // take case
         }
-        return dp[ind][prev + 1] = max(take, notTake);
+
+        return dp[ind][prev + 1] = len;
     }
     int LIS(vector<int>& nums) {
-        // recursion and memoisation
+        int n = nums.size();
+        // dp array
         vector<vector<int>> dp(n, vector<int>(n + 1, -1));
-        // ind can be 0 to n-1 and prev can be -1 to n-1, so we increase prev to
-        // 0 to n+1
-        return f(0, -1, nums, nums.size(), dp);
+        return f(0, -1, n, nums, dp);
     }
 };
