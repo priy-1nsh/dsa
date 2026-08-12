@@ -1,11 +1,11 @@
 {
     "presentation": {
-    "echo": false,
-    "reveal": "always",
-    "focus": true,
-    "panel": "shared",
-    "clear": true,
-    "showReuseMessage": false
+        "echo": false,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "clear": true,
+        "showReuseMessage": false
     },
     "version": "2.0.0",
     "tasks": [
@@ -25,8 +25,11 @@
         {
             "label": "Compile",
             "type": "shell",
-            "command": "C:\\MinGW\\bin\\g++.exe",
+            "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
             "args": [
+                "-std=c++17",
+                "-O2",
+                "-Wall",
                 "${file}",
                 "-o",
                 "${workspaceFolder}\\a.exe"
